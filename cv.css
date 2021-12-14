@@ -1,0 +1,152 @@
+/*css pour Mon cv*/
+
+@font-face {
+    font-family: 'blokletters_balpenbalpen';
+    src: url('police/Blokletters-Balpen-webfont.eot');
+    src: url('police/Blokletters-Balpen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/Blokletters-Balpen-webfont.woff2') format('woff2'),
+         url('police/Blokletters-Balpen-webfont.woff') format('woff'),
+         url('police/Blokletters-Balpen-webfont.ttf') format('truetype'),
+         url('police/Blokletters-Balpen-webfont.svg#blokletters_balpenbalpen') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{/*pour une image de fond de page*/
+	background-image: url("images/fond_page.png");
+}
+
+
+#bloc_page{
+	width: 84%;
+}
+
+h1, h2{
+	font-family: blokletters_balpenbalpen, arial, serif;
+}
+
+
+h1, h1 + p{
+	text-align: center;
+}
+
+
+img{
+	float: right;
+	border: 1px black;
+	box-shadow: 5px 5px 5px black;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+#lisere{
+	background-image: url("images/fond_liseret.jpg");
+	color: white;
+	height: 600px;
+	width: 15%;
+	max-width: 186px;
+	border-radius: 20px;
+
+}
+#lisere, #bloc_page
+{
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+#lisere ul{
+	list-style-type: none;
+	padding-right: 10px;
+	padding-top: 50%;
+	margin-left: -27px;
+}
+
+
+section
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 29%;
+    margin-right: 2%;
+    margin-top: 8%;
+}
+#marge{
+	margin-left: 20px;
+}
+
+h2{
+	color: #7E1111;
+}
+
+#info_petit{
+	display: none;
+}
+
+
+
+
+/*POUR LES PLUS PETITS ECRANS*/
+@media screen and (max-width: 1185px){
+	#bloc_page
+	{
+		width: 98%;
+		text-align: center;
+	}
+	
+	#lisere
+	{
+		display: none;
+	}
+
+
+	#info_petit
+	{
+		display: block;
+		margin-top: 5%;
+	}
+
+	ul
+	{
+		list-style-type: none;
+		text-align: justify;
+	}
+
+	section
+	{
+		display: block;
+		width: 98%;
+
+	}
+
+	section:last-child{
+		margin-bottom: 10%;
+	}
+
+	img
+	{
+	float: none;
+	border: 1px black;
+	box-shadow: 5px 5px 5px black;
+	}
+
+	#marge
+	{
+		margin-left: 0;
+	}
+
+	a
+	{
+	color: black;
+	}
+
+	body{
+	background-image: url("images/fond_page.jpg");
+	}
+
+}

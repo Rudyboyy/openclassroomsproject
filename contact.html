@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Projet_blog.css" />
+     <title>Rudy - Contact</title>
+ </head>
+
+ <body>
+ 	<div id="bloc_page">
+
+ 		<header>
+
+ 			<div id="titre_principal">
+ 				<div id="logo">
+ 					<img src="logo/logo_RL_3.png" alt="Logo de Rudy Lepretre" />
+ 					<h1>Rudy</h1>	
+ 				</div>
+ 				<h2>Carnets de voyage</h2>
+ 			</div>
+
+ 			<nav>
+ 				<ul>
+ 					<li><a href="index.html">Accueil</a></li>
+ 					<li><a href="blog.html">Blog</a></li><!--faire le blog-->
+ 					<li><a href="cv.html" target="_blank">CV</a></li><!--penser a modifier la photo du cv-->
+ 					<li><a href="#">Contact</a></li><!--faire le lien PHP-->
+ 				</ul>
+ 			</nav>
+
+ 		</header>
+
+
+
+
+ 		<form method="post" action="traitement.php"><!--ajouter le lien PHP-->
+ 			<p>
+ 				<label for="pseudo">Votre pseudo</label>
+ 				<input type="text" name="pseudo" id="pseudo" size="38" autofocus />
+ 			</p>
+
+ 			<p>
+ 				<label for="avis">N'hésitez pas à me donner votre avis</label><br />
+
+ 				<textarea name="avis" id="avis" placeholder="EX : Comment améliorer mon site, si vous avez des questions sur mes voyages ou tout simplement m'envoyer un coucou c'est à vous de voir ;)" rows="15" cols="60"></textarea>
+ 			</p>
+
+ 			<p id="aime">
+ 				Comment avez-vous trouvé mon site ?<br />
+
+ 				<input type="radio" name="aime" value="adore" id="adore" />
+ 				<label for="aime">J'adore !</label><br />
+
+ 				<input type="radio" name="aime" value="pas_mal" id="pas_mal" />
+ 				<label for="aime">Pas mal</label><br />
+
+ 				<input type="radio" name="aime" value="sans_plus" id="sans_plus" />
+ 				<label for="aime">Sans plus</label><br />
+
+ 				<input type="radio" name="aime" value="nul" id="nul" />
+ 				<label for="aime">Nul...</label>
+ 			</p>
+
+ 			<p><input type="submit" value="Envoyer" /></p>
+ 		</form>
+
+ 	</div>
+ </body>
